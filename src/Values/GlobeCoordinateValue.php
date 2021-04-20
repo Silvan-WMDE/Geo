@@ -218,8 +218,8 @@ class GlobeCoordinateValue implements DataValue {
 
 		return new self(
 			new LatLongValue(
-				floatval($data['latitude']),
-				floatval($data['longitude'])
+				(float)$data['latitude'],
+				(float)$data['longitude']
 			),
 			( isset( $data['precision'] ) ) ? $data['precision'] : null,
 			( isset( $data['globe'] ) ) ? $data['globe'] : null

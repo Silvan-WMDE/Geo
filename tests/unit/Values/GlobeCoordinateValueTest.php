@@ -299,6 +299,7 @@ class GlobeCoordinateValueTest extends TestCase {
 		yield [ [ 'latitude' => 'foo', 'longitude' => '4.56' ] ];
 		yield [ [ 'latitude' => '12.3', 'longitude' => 'bar' ] ];
 		yield [ [ 'latitude' => 'foo', 'longitude' => 'bar' ] ];
+		yield [ [ 'latitude' => '1.23a', 'longitude' => '3.45b' ] ];
 	}
 
 
